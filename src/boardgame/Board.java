@@ -37,6 +37,11 @@ public class Board {
 		return pieces[position.getRow()][position.getColumn()];
 	}
 	
-	
+	//método responsável por colocar peça específica em posição específica do tabuleiro
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		//como a peça não está mais a posição inicial, posição recebe coordenadas atuais
+		piece.position = position;
+	}
 	
 }
