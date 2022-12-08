@@ -20,8 +20,8 @@ public class Program {
 				//Função para limpar o console no início de cada rodada
 				UI.clearScreen();
 				//Função que vai imprimir o tabuleiro. Para isso, vamos criar a classe User Interface (UI)
-				UI.printBoard(chessMatch.getPieces());
-				System.out.println("\n");
+				UI.printMatch(chessMatch);
+				System.out.println();
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
 				
