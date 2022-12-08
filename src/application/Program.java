@@ -21,7 +21,7 @@ public class Program {
 				UI.clearScreen();
 				//Função que vai imprimir o tabuleiro. Para isso, vamos criar a classe User Interface (UI)
 				UI.printBoard(chessMatch.getPieces());
-				System.out.println();
+				System.out.println("\n");
 				System.out.print("Source: ");
 				ChessPosition source = UI.readChessPosition(sc);
 				
@@ -30,7 +30,7 @@ public class Program {
 				//função que vai imprimir os movimentos possíveis no tabuleiro (colorir o fundo)
 				UI.printBoard(chessMatch.getPieces(), possibleMoves);
 			
-				System.out.println();
+				System.out.println("\n");
 				System.out.print("Target: ");
 				ChessPosition target = UI.readChessPosition(sc);
 			
